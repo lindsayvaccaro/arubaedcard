@@ -17,6 +17,7 @@ body {
     max-width: 1000px;
     background-color: rgba(227, 236, 243, 0.45);
     margin: 0 auto;
+    line-height: 1.5;
 }
 
 header img {
@@ -27,4 +28,149 @@ header img {
 header {
     display: flex;
     align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    padding-bottom: 20px;
+}
+
+.intro {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro ul {
+    margin-left: 8%;
+}
+
+.intro h4 {
+    padding-top: 15px;
+}
+
+.intro p::first-line {
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.formgroup {
+    display: flex;
+    align-items: baseline;
+
+}
+form h5 {
+    padding-top: 20px;
+}
+
+.formgroup label {
+    width: 30%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+input[type=text],
+input[type=date],
+input[type=tel],
+input[type=email],
+select {
+    font-size: 90%;
+    width: 40%;
+}
+
+.radiogroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+}
+
+.radiogroup label {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.radiotype label {
+    width: 70%;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 8px;
+}
+
+input[type=checkbox] {
+    margin-left: 15%;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: lavender;
+    padding: 8px 15px;
+    border: 1px solid dodgerblue;
+    border-radius: 7px;
+}
+
+input[type=submit], input[type=reset]:hover {
+    background-color: dodgerblue;
+    border: lavender;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    gap: 20px;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    font-variant: small-caps;
+    background-color: lavender;
+}
+
+/*mediaquery*/
+
+@media (max-width: 767px) {
+body {
+width: 100%;
+}
+header {
+    flex-direction: column;
+}
+
+header h2 {
+    font-size: 125%;
+    text-align: center;
+}
+
+.intro {
+    width: 95%;
+    margin: 0 auto;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.formgroup {
+    flex-direction: column;
+}
+
+.radiotype {
+    flex-direction: row;
+}
+
+.formgroup label {
+    width: 95%;
+    text-align: left;
+}
+
+input[type=text], input[type=date], select {
+    width: 95%;
+}
+
 }
